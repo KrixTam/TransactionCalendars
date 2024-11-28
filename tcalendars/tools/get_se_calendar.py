@@ -27,13 +27,14 @@ def get_filename(dir=None):
     return path.join(dir_name, output_filename)
 
 
-def get_calendars(start_date='2005-1-1', end_date=None, dir=None):
+def get_calendar(start_date='2005-1-1', end_date=None, dir=None):
     '''
     zrxh：weekday，1（星期天） - 7（星期六）
     jybz：1 - 交易日；0 - 非交易日
     jyrq：交易日期
     :return:
     '''
+    print('获取A股交易日历中，请稍等……')
     dt = moment(start_date)
     if end_date is None:
         now = moment(moment().format('YYYY-12-31'))

@@ -25,7 +25,8 @@ for d in dirs:
         shutil.rmtree(d)
 
 test_modules = [
-    'tcalendars.test.test_tools'
+    'tcalendars.test.test_tools',
+    'tcalendars.test.test_transactioncalendars'
 ]
 
 # 执行测试用例
